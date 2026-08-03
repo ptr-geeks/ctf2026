@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Domov{% endblock %}
+{% block body %}
+<h1>Oglasna deska posadke</h1>
+<p style="color:#5a8aa0">Interno komunikacijsko omrežje vesoljske postaje Orion-7.
+Sumljive objave lahko prijavite <b style="color:#9dc8e0">častnici Vegi</b>
+v pregled.</p>
+
+{% if user %}
+<div class="card">
+<h2>📝 Nova objava</h2>
+<form method="post" action="/post/new">
+<div class="lbl">Sporočilo</div>
+<textarea name="content" maxlength="4000" required></textarea>
+<br><button style="margin-top:10px">Objavi na desko</button>
+</form>
+</div>
+{% else %}
+<div class="card">
+<p>Za objavljanje morate biti <a href="/login">prijavljeni</a>.</p>
+</div>
+{% endif %}
+
+<hr>
+
+{% for p in posts %}
+<div class="card">
+<h3><a href="/post/{{ p.id }}">📄 Objava</a></h3>
+<p style="margin:8px 0;white-space:pre-wrap">{{ p.content[:200] }}</p>
+<div class="dim">— {{ p.author_name }}</div>
+</div>
+{% else %}
+<p>Še ni objav.</p>
+{% endfor %}
+
+<hr>
+<p style="color:#3a6880;font-size:13px">
+<a href="/solve" style="color:#4ab8e0">🏁 Oddaj žeton</a>
+</p>
+{% endblock %}

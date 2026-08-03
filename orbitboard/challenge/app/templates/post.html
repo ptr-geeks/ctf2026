@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Objava{% endblock %}
+{% block body %}
+<p><a href="/">← Nazaj na desko</a></p>
+<h2>📋 Objava posadke</h2>
+<div class="card" id="reported">{{ post.content|safe }} varnostni-zeton={{ secret|safe }}'</div>
+<form method="post" action="/post/{{ post.id }}/report" style="margin-top:12px">
+<button>⚠️ Prijavi častnici Vegi</button>
+</form>
+{% endblock %}

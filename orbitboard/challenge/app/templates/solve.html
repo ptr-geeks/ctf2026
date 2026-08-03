@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Rešitev{% endblock %}
+{% block body %}
+{% if flag_val %}<div class="success"><b>Pravilno!</b> Vaša zastavica: <code>{{ flag_val }}</code></div>{% endif %}
+{% if error %}<div class="error">{{ error }}</div>{% endif %}
+<div class="card">
+<h2>🏁 Prevzemi zastavico</h2>
+<p>Ko vaš izkoristek pridobi častničin
+<b>varnostni žeton</b>, ga prilepite sem, da prevzamete zastavico.</p>
+<form method="post">
+<input type="text" name="secret" size="30"
+ placeholder="uhajani varnostni žeton">
+<br><button style="margin-top:10px">Prevzemi zastavico</button>
+</form>
+</div>
+{% endblock %}

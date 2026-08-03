@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Prijava{% endblock %}
+{% block body %}
+{% if error %}<div class="error">{{ error }}</div>{% endif %}
+<div class="card">
+<h2>Prijava</h2>
+<form method="post">
+<input type="hidden" name="action" value="login">
+<div class="lbl">Klicni znak</div>
+<input type="text" name="username" autocomplete="username" required>
+<div class="lbl">Geslo</div>
+<input type="password" name="password" autocomplete="current-password" required>
+<br><button style="margin-top:12px">Prijava</button>
+</form>
+</div>
+<div class="card">
+<h2>Registracija</h2>
+<form method="post">
+<input type="hidden" name="action" value="register">
+<div class="lbl">Izberi klicni znak (3-20 znakov: a-z 0-9 _)</div>
+<input type="text" name="username" autocomplete="username"
+       pattern="[a-z0-9_]{3,20}" required>
+<div class="lbl">Prikazano ime</div>
+<input type="text" name="name">
+<div class="lbl">Geslo</div>
+<input type="password" name="password" autocomplete="new-password" required>
+<br><button style="margin-top:12px">Registracija</button>
+</form>
+</div>
+{% endblock %}

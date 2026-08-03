@@ -1,0 +1,11 @@
+{
+  "name": "orbitboard-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Security Officer bot for OrbitBoard challenges.",
+  "scripts": { "start": "node bot.js" },
+  "dependencies": {
+    "playwright": "1.45.0"
+  }
+}

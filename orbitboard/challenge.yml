@@ -1,0 +1,57 @@
+name: "Orbitboard"
+author: "Nejc"
+category: "web"
+description: |
+  Častnica Vega vodi vesoljsko postajo OrbitBoard. Ta ima na njej interno oglasno desko posadke.
+  Vsak lahko objavi sporočilo, sumljive objave pa je mogoče prijaviti njej
+  v pregled.
+
+  Prepričaj častnico Vego, da izda nekaj, česar ne bi smela, nato pa to
+  dokaži na /solve.
+attribution: "Nejc"
+value: 10
+logic: any
+type: "instanced"
+extra:
+  flag_base: "ptr{ta_postaja_ni_vec_varna}"
+  flag_type: "7"
+  challenge_type: "web"
+  duration: 600
+  cooldown: 60
+  repository: "oci://registry:5000/charts"
+  chart: "web-bot"
+  chart_version: "0.1.0"
+  values: |
+    image.repository=registry.dctf.si/web/orbitboard
+    image.tag=latest
+    image.bottag=bot
+    image.pullPolicy=Always
+    imagePullSecrets[0].name=dctf
+    pod.env[0].name=BOT_URL
+    pod.env[0].value=http://localhost:3001
+    pod.env[1].name=BOT_USERNAME
+    pod.env[1].value=officer_vega
+    pod.env[2].name=BOT_PASSWORD
+    pod.env[2].value=orbitboard-instance-secret
+    bot.env[0].name=BOT_USERNAME
+    bot.env[0].value=officer_vega
+    bot.env[1].name=BOT_PASSWORD
+    bot.env[1].value=orbitboard-instance-secret
+    flag.envkey=FLAG
+    flag.bot.targetenvkey=SITE_URL
+
+
+connection_info: "Use the instancer on the top left corner"
+
+flags:
+- type: "instanced"
+  content: ""
+  data: ""
+tags:
+- web
+- medium
+files:
+- dist.zip
+
+state: visible
+version: "0.1"
