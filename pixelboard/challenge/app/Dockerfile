@@ -19,8 +19,6 @@ RUN mkdir -p /var/www/html/uploads /var/www/data \
     && chmod +x /usr/local/bin/docker-entrypoint.sh \
     && chown -R www-data:www-data /var/www/html/uploads /var/www/data
 
-ENV FLAG="flag{local_test_flag}"
-
 EXPOSE 80
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["apache2-foreground"]

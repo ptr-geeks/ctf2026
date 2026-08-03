@@ -39,15 +39,12 @@ function get_db(): PDO
             );
         ');
 
-        $adminPassword = getenv('ADMIN_PASSWORD') ?: bin2hex(random_bytes(16));
+        $adminPassword = bin2hex(random_bytes(16));
         $stmt = $db->prepare(
             'INSERT INTO users (username, password, is_admin, avatar) VALUES (\'admin\', :pw, 1, :avatar)'
         );
         $stmt->execute([':pw' => $adminPassword, ':avatar' => 'avatar-admin.png']);
-
-        // A handful of regular (non-admin) community members, each with a
-        // random password and its own avatar, so the forum doesn't look
-        // empty (or like everyone shares one profile picture) on first boot.
+        
         $randomUsernames = ['ana_lens', 'miha_snap', 'urska_photo', 'luka_focus', 'nika_frames'];
         $userStmt = $db->prepare(
             'INSERT INTO users (username, password, is_admin, avatar) VALUES (:username, :pw, 0, :avatar)'
