@@ -1,0 +1,8 @@
+name: pixelboard-chall
+services:
+  web:
+    build: ./app
+    environment:
+      FLAG: "flag{local_test_flag}"
+    ports:
+      - "3000:80"
