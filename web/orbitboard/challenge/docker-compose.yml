@@ -1,6 +1,7 @@
 name: orbitboard-chall
 services:
   site:
+    image: registry.vuln.si/ptr2026/web/orbitboard:latest
     build: ./app
     environment:
       FLAG: "flag{local_test_flag}"
@@ -11,6 +12,7 @@ services:
     ports:
       - "3000:5000"
   bot:
+    image: registry.vuln.si/ptr2026/web/orbitboard:bot
     build: ./bot
     environment:
       SITE_URL: "http://site:5000"

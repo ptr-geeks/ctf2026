@@ -1,6 +1,7 @@
 name: pixelboard-chall
 services:
   web:
+    image: registry.vuln.si/ptr2026/web/pixelboard:latest
     build: ./app
     environment:
       FLAG: "flag{local_test_flag}"
