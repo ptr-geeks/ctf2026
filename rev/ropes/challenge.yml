@@ -1,0 +1,19 @@
+name: "Ropes"
+author: "aJuvan"
+category: "rev"
+description: "Get a hang of the ropes first!"
+attribution: "aJuvan"
+value: 1
+logic: any
+type: "standard"
+
+flags:
+- "ptr{7h1s_AI_M0D3l_s33M5_3x7r3M3lY_iNEff1c13n7}"
+tags:
+- rev
+- easy
+files:
+- dist.zip
+
+state: visible
+version: "0.1"

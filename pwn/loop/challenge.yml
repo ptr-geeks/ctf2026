@@ -1,0 +1,38 @@
+name: "Loop"
+author: "aJuvan"
+category: "pwn"
+description: "Round and round we go!"
+attribution: "aJuvan"
+value: 5
+logic: any
+type: "instanced"
+extra:
+  flag_base: "ptr{you_spin_me_right_round}"
+  flag_type: "7"
+  challenge_type: "socket"
+  duration: 1800
+  cooldown: 60
+  repository: "oci://registry:5000/charts"
+  chart: "pwn"
+  chart_version: "0.1.0"
+  values: |
+    image.repository=registry.vuln.si/ptr2026/pwn/loop
+    image.tag=latest
+    image.pullPolicy=Always
+    imagePullSecrets[0].name=vuln
+    flag.path=/app/flag.txt
+
+connection_info: "Use the instancer on the top left corner"
+
+flags:
+- type: "instanced"
+  content: ""
+  data: ""
+tags:
+- pwn
+- medium
+files:
+- dist.zip
+
+state: visible
+version: "0.1"

@@ -15,20 +15,16 @@ extra:
   flag_base: "ptr{magic_bytes_dont_check_extensions}"
   flag_type: "7"
   challenge_type: "web"
-  duration: 600
+  duration: 900
   cooldown: 60
   repository: "oci://registry:5000/charts"
   chart: "web"
   chart_version: "0.1.0"
   values: |
-    image.repository=registry.dctf.si/web/pixelboard
+    image.repository=registry.vuln.si/ptr2026/web/pixelboard
     image.tag=latest
     image.pullPolicy=Always
-    imagePullSecrets[0].name=dctf
-    pod.securityContext.readOnlyRootFilesystem=false
-    pod.securityContext.runAsNonRoot=false
-    pod.securityContext.runAsUser=0
-    pod.securityContext.runAsGroup=0
+    imagePullSecrets[0].name=vuln
     flag.path=/flag.txt
 
 connection_info: "Use the instancer on the top left corner"

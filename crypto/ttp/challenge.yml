@@ -1,0 +1,19 @@
+name: "TTP"
+author: "aJuvan"
+category: "crypto"
+description: "OTP but twice as good! What could it say?"
+attribution: "aJuvan"
+value: 1
+logic: any
+type: "standard"
+
+flags:
+- "ptr{tw1c3_4S_g00D_0r_7Wic3_a5_b4d}"
+tags:
+- crypto
+- easy
+files:
+- dist.zip
+
+state: visible
+version: "0.1"
