@@ -1,0 +1,19 @@
+name: "Hidden in plain sight"
+author: "aJuvan"
+category: "web"
+description: "Is this a new flag? Or was it always there?..."
+attribution: "aJuvan"
+value: 1
+logic: any
+type: "standard"
+connection_info: https://ptr.si
+
+flags:
+- "ptr{good_find_have_a_flag}"
+tags:
+- web
+- easy
+files: []
+
+state: visible
+version: "0.1"
