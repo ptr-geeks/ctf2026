@@ -11,7 +11,7 @@ run: build
 	./main
 
 dist:
-	zip dist.zip Dockerfile ttp.py
+	zip dist.zip ttp.py output.txt
 
 install: dist
 	ctf challenge install .

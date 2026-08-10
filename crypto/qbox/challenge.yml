@@ -1,7 +1,10 @@
 name: "?-box"
 author: "aJuvan"
 category: "crypto"
-description: "Help me figure out this encryption. I have a server that does some magical encrypting and I managed to get a hold of a cryptotext. What could be the plaintext???"
+description: |
+  Help me figure out this encryption. I have a server that does some magical encrypting and I managed to get a hold of a ciphertext. What could be the plaintext???
+
+  Ciphertext: `ccs7g1_pc_YE7_3SRo3r01_n_5coh1t_1RwnlIMGO{}1H_npn`
 attribution: "aJuvan"
 value: 5
 logic: any
