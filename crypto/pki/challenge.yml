@@ -1,6 +1,6 @@
 name: "PKI"
 author: "aJuvan"
-category: "crypto"
+category: "Crypto"
 description: "I built my own public key system for signing my private messages. I locked parts of the system down for my personal keys, do not touch that!"
 attribution: "aJuvan"
 value: 10
@@ -29,6 +29,7 @@ flags:
   content: ""
   data: ""
 tags:
+- event_ptr26
 - crypto
 - hard
 files:

@@ -1,6 +1,6 @@
 name: "Baseline"
 author: "aJuvan"
-category: "pwn"
+category: "Pwn"
 description: ""
 attribution: "aJuvan"
 value: 1
@@ -29,6 +29,7 @@ flags:
   content: ""
   data: ""
 tags:
+- event_ptr26
 - pwn
 - easy
 files:

@@ -1,6 +1,6 @@
 name: "TTP"
 author: "aJuvan"
-category: "crypto"
+category: "Crypto"
 description: "OTP but twice as good! What could it say?"
 attribution: "aJuvan"
 value: 1
@@ -10,6 +10,7 @@ type: "standard"
 flags:
 - "ptr{tw1c3_4S_g00D_0r_7Wic3_a5_b4d}"
 tags:
+- event_ptr26
 - crypto
 - easy
 files:

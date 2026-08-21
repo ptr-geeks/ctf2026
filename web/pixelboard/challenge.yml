@@ -1,6 +1,6 @@
 name: "PixelBoard"
 author: "Nejc"
-category: "web"
+category: "Web"
 description: |
   Skupnost ljubiteljev fotografije se je preselila na svoj lasten forum,
   PixelBoard. Prijava je na voljo le obstoječim članom, samostojna
@@ -40,6 +40,7 @@ flags:
   content: ""
   data: ""
 tags:
+- event_ptr26
 - web
 - hard
 files:

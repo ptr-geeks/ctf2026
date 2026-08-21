@@ -1,6 +1,6 @@
 name: "Hidden in plain sight"
 author: "aJuvan"
-category: "web"
+category: "Web"
 description: "Is this a new flag? Or was it always there?..."
 attribution: "aJuvan"
 value: 1
@@ -11,6 +11,7 @@ connection_info: https://ptr.si
 flags:
 - "ptr{good_find_have_a_flag}"
 tags:
+- event_ptr26
 - web
 - easy
 files: []

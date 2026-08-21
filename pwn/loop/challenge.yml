@@ -1,6 +1,6 @@
 name: "Loop"
 author: "aJuvan"
-category: "pwn"
+category: "Pwn"
 description: "Round and round we go!"
 attribution: "aJuvan"
 value: 5
@@ -29,6 +29,7 @@ flags:
   content: ""
   data: ""
 tags:
+- event_ptr26
 - pwn
 - medium
 files:

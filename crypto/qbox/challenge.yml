@@ -1,6 +1,6 @@
 name: "?-box"
 author: "aJuvan"
-category: "crypto"
+category: "Crypto"
 description: |
   Help me figure out this encryption. I have a server that does some magical encrypting and I managed to get a hold of a ciphertext. What could be the plaintext???
 
@@ -30,6 +30,7 @@ connection_info: "Use the instancer on the top left corner"
 flags:
 - "ptr{H0w_coM3_7h1s_EncRYp71on_IS_gO1nG_1n_c1Rcl35}"
 tags:
+- event_ptr26
 - crypto
 - medium
 files: []

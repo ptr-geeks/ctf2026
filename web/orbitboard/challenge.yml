@@ -1,6 +1,6 @@
 name: "Orbitboard"
 author: "Nejc"
-category: "web"
+category: "Web"
 description: |
   Častnica Vega vodi vesoljsko postajo OrbitBoard. Ta ima na njej interno oglasno desko posadke.
   Vsak lahko objavi sporočilo, sumljive objave pa je mogoče prijaviti njej
@@ -48,6 +48,7 @@ flags:
   content: ""
   data: ""
 tags:
+- event_ptr26
 - web
 - medium
 files:

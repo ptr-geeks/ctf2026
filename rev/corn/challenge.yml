@@ -1,6 +1,6 @@
 name: "Corn"
 author: "aJuvan"
-category: "rev"
+category: "Rev"
 description: "What's another name for corn?"
 attribution: "aJuvan"
 value: 10
@@ -29,6 +29,7 @@ flags:
   content: ""
   data: ""
 tags:
+- event_ptr26
 - rev
 - hard
 files:

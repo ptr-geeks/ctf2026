@@ -1,6 +1,6 @@
 name: "Login"
 author: "aJuvan"
-category: "rev"
+category: "Rev"
 description: "Access denied. Please log in."
 attribution: "aJuvan"
 value: 5
@@ -29,6 +29,7 @@ flags:
   content: ""
   data: ""
 tags:
+- event_ptr26
 - rev
 - medium
 files:

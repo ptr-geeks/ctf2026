@@ -1,6 +1,6 @@
 name: "Gottem!"
 author: "aJuvan"
-category: "pwn"
+category: "Pwn"
 description: "Lmao, you go get 'em!"
 attribution: "aJuvan"
 value: 10
@@ -29,6 +29,7 @@ flags:
   content: ""
   data: ""
 tags:
+- event_ptr26
 - pwn
 - hard
 files:
